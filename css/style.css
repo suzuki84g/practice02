@@ -40,3 +40,27 @@ header nav ul {
 header nav ul li {
     margin: 10px;
 }
+
+/* main-index */
+.indexBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.indexBox h2 {
+    text-align: center;
+    width: 90%;
+}
+.indexBox p {
+    width: 90%;
+    text-align: left;
+}
+.indexBox button {
+    margin: 30px;
+    padding: 8px 20px;
+    border: solid 0px;
+    border-radius: 5px;
+    background-color: #00bfff;
+    color: #ffffff;
+}
