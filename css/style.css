@@ -41,6 +41,15 @@ header nav ul li {
     margin: 10px;
 }
 
+/* index表示のフルスクリーン背景 */
+.fullscreen {
+background-image: url(../src/image/main-bg.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
 /* main-index */
 .indexBox {
     display: flex;
