@@ -68,6 +68,8 @@ header nav ul li {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    /* #TODO: 透過処理を入れる */
+    /* background-blend-mode: normal; */
 }
 .contactHeaderBox {
     background-image: url(../src/image/contact-bg.jpg);
