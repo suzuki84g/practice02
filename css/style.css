@@ -93,5 +93,21 @@ header nav ul li {
 }
 
 /* news main */
-.newsBox .newsBox {
+.newsContainer {
+    background-color: blue;
+    padding: 20px;
+    display: flex;
+}
+.newsContainer .articleHeader {
+    background-color: violet;
+}
+.newsContainer .articleContents {
+    background-color: orange;
+}
+.newsContainer .sidebarBox {
+    background-color: palegreen;
+}
+.articleContents img {
+    width: 100%;
+    height: 100%;
 }
