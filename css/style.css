@@ -139,4 +139,11 @@ header nav ul li {
 /* contact main */
 .contactContainer {
     background-color: blue;
+    padding: 20px;
+}
+.contactContainer .mapBox {
+    display: flex;
+}
+.contactContainer .mediaBox {
+    display: flex;
 }
