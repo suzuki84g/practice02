@@ -52,6 +52,9 @@ header nav ul li {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    /* #TODO: 透過処理を入れる */
+    background-color: rgba(255,255,255,0.4);  /* 背景色を白に指定して透過度を0.8 */
+    background-blend-mode: lighten;  /* 透過指定とオプション */
 }
 
 /* header画像表示 */
@@ -68,8 +71,8 @@ header nav ul li {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    /* #TODO: 透過処理を入れる */
-    /* background-blend-mode: normal; */
+    background-color: rgba(255,255,255,0.4);  /* 背景色を白に指定して透過度を0.8 */
+    background-blend-mode: lighten;  /* 透過指定とオプション */
 }
 .contactHeaderBox {
     background-image: url(../src/image/contact-bg.jpg);
@@ -77,6 +80,8 @@ header nav ul li {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-color: rgba(255,255,255,0.4);  /* 背景色を白に指定して透過度を0.8 */
+    background-blend-mode: lighten;  /* 透過指定とオプション */
 }
 
 /* index main */
