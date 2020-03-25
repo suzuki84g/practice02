@@ -80,25 +80,25 @@ header h2 {  /* indexは該当タグ無し */
     background-blend-mode: lighten;  /* 透過指定とオプション */
 }
 
-/* header画像表示 */
+/* header画像表示の指定 */
 .newsHeaderBox {
     background-image: url(../src/image/news-bg.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
 }
 .menuHeaderBox {
     background-image: url(../src/image/menu-bg.jpg);
+}
+.contactHeaderBox {
+    background-image: url(../src/image/contact-bg.jpg);
+}
+
+/* header画像表示の設定 */
+.newsHeaderBox {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: rgba(255,255,255,0.4);  /* 背景色を白に指定して透過度を0.8 */
-    background-blend-mode: lighten;  /* 透過指定とオプション */
 }
-.contactHeaderBox {
-    background-image: url(../src/image/contact-bg.jpg);
+.menuHeaderBox,.contactHeaderBox {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
