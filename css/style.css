@@ -48,6 +48,8 @@ h3 {
     font-family: 'Philosopher', sans-serif;
     font-weight: 400;
     font-size: large;
+    border-bottom: #00a1e9 solid 2px;
+    padding: 10px 5px;
 }
 
 /* header共通 */
@@ -175,6 +177,10 @@ main.newsContainer {
     padding: 5px;
     width: 80%;
 }
+.newsContainer .articleHeader .contentTitle h3 {
+    border: none;
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
 .newsContainer .articleContents {
     margin: 10px 0;
 }
@@ -188,13 +194,18 @@ main.newsContainer {
 }
 .newsContainer aside.sidebarBox {
     margin-top: 30px;
-    border: solid 3px palegreen;  /* #ISSUE: テスト用 */
     display: flex;
     flex-direction: column;
 }
 .newsContainer .sidebarBox section {
-    border: red solid 3px;
-    margin-bottom: 10px;
+    margin: 15px 0;
+}
+.newsContainer .sidebarBox section ul li {
+    border-bottom: solid #d4d9d6 1px;
+    padding: 10px;
+}
+.newsContainer .sidebarBox section p {
+    padding: 10px;
 }
 
 /* menu main */
