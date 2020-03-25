@@ -23,19 +23,27 @@ a[href]{
 text-decoration: none;  /* リンクのデコレーションを無効化 */
 }
 
-/* body コンテナ化 共通 */
+/* bodyコンテナ化 共通 */
 body .container {  /* container導入 */
 display: flex;
 flex-direction: column;
 min-height: 100vh;
 align-items: center;
 }
-
-/* header共通 */
 header {  /* 横枠を100％まで広がって自動で余白を取る */
     width: 100%;
     margin: 0 auto;
 }
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+footer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* header共通 */
 header .logo {  /* logoのボックスサイズ */
     width: 200px;
     height: auto;
