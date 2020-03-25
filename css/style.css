@@ -92,17 +92,13 @@ header h2 {  /* indexは該当タグ無し */
 }
 
 /* header画像表示の設定 */
-.newsHeaderBox {
+.newsHeaderBox, .menuHeaderBox, .contactHeaderBox {  /* 背景共通設定 */
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 .menuHeaderBox,.contactHeaderBox {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     background-color: rgba(255,255,255,0.4);  /* 背景色を白に指定して透過度を0.8 */
     background-blend-mode: lighten;  /* 透過指定とオプション */
 }
