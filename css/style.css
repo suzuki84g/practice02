@@ -21,15 +21,15 @@ body ul li:hover {
     color: #0bd;  /* 要件 */
 }
 a[href]{
-text-decoration: none;  /* リンクのデコレーションを無効化 */
+    text-decoration: none;  /* リンクのデコレーションを無効化 */
 }
 
 /* bodyコンテナ化 共通 */
 body .container {  /* container導入 */
-display: flex;
-flex-direction: column;
-min-height: 100vh;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
 }
 header {  /* 横枠を100％まで広がって自動で余白を取る */
     width: 100%;
@@ -67,6 +67,8 @@ header nav ul li {
 header h2 {  /* indexは該当タグ無し */
     text-align: center;
     font-family: 'Philosopher', sans-serif;
+    font-weight: 400;
+    font-size: xx-large;
 }
 
 /* 背景画像の指定 */
@@ -95,7 +97,7 @@ header h2 {  /* indexは該当タグ無し */
     background-blend-mode: lighten;  /* 透過指定とオプション */
 }
 
-/* index main */
+/* index */
 .indexBox {
     display: flex;
     flex-direction: column;
@@ -123,7 +125,10 @@ header h2 {  /* indexは該当タグ無し */
     color: #ffffff;
 }
 
-/* news main */
+/* news */
+header .newsTop {
+    margin: 30px 0 50px;
+}
 .newsContainer {
     background-color: blue;
     padding: 20px;
