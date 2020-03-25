@@ -4,26 +4,6 @@
     box-sizing: border-box;
 }
 
-/* 共通部品 */
-body {
-    font-size: 100%;
-    color: #4d2100;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 300;
-}
-body ul li {
-    color: #4d2100;
-    list-style-type: none;  /* 行頭記号無し */
-    padding: 0px;  /* デフォルトの行頭記号余白を無効化 */
-    margin: 0px;  /* デフォルトの行頭記号余白を無効化 */
-}
-body ul li:hover {
-    color: #0bd;  /* 要件 */
-}
-a[href]{
-    text-decoration: none;  /* リンクのデコレーションを無効化 */
-}
-
 /* bodyコンテナ化 共通 */
 body .container {  /* container導入 */
     display: flex;
@@ -42,6 +22,32 @@ main {
 footer {
     width: 100%;
     margin: 0 auto;
+}
+
+/* 全体共通部品 */
+body {
+    font-size: 100%;
+    color: #4d2100;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+}
+body ul li {
+    color: #4d2100;
+    list-style-type: none;  /* 行頭記号無し */
+    padding: 0px;  /* デフォルトの行頭記号余白を無効化 */
+    margin: 0px;  /* デフォルトの行頭記号余白を無効化 */
+}
+body ul li:hover {
+    color: #0bd;  /* 要件 */
+}
+a[href]{
+    text-decoration: none;  /* リンクのデコレーションを無効化 */
+}
+h3 {
+    text-align: left;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 400;
+    font-size: large;
 }
 
 /* header共通 */
@@ -129,23 +135,39 @@ header h2 {  /* indexは該当タグ無し */
 header .newsTop {
     margin: 30px 0 50px;
 }
-.newsContainer {
-    background-color: blue;
-    padding: 20px;
+main.newsContainer {
+    padding: 40px 20px;
     display: flex;
+    flex-direction: column;
+}
+.newsContainer article.articleBox {
+    border: solid 3px deeppink;  /* #ISSUE: テスト用 */
+    display: flex;
+    flex-direction: column;
 }
 .newsContainer .articleHeader {
-    background-color: violet;
+    background-color: violet;  /* #ISSUE: テスト用 */
+    display: flex;
+}
+.newsContainer .articleHeader .updateTime {
+    background-color: dimgray;
 }
 .newsContainer .articleContents {
-    background-color: orange;
+    background-color: orange;  /* #ISSUE: テスト用 */
 }
-.newsContainer .sidebarBox {
-    background-color: palegreen;
-}
-.articleContents img {
+.newsContainer .articleContents img {
     width: 100%;
     height: 100%;
+}
+.newsContainer aside.sidebarBox {
+    margin-top: 30px;
+    border: solid 3px palegreen;  /* #ISSUE: テスト用 */
+    display: flex;
+    flex-direction: column;
+}
+.newsContainer .sidebarBox section {
+    border: red solid 3px;
+    margin-bottom: 10px;
 }
 
 /* menu main */
