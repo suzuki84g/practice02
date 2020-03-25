@@ -77,6 +77,16 @@ header h2 {  /* indexは該当タグ無し */
     font-size: xx-large;
 }
 
+/* footer共通 */
+footer {
+    background: #331600;
+}
+footer p {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 30px;
+}
+
 /* 背景画像の指定 */
 .indexFullscreen {
     background-image: url(../src/image/main-bg.jpg);
