@@ -3,6 +3,8 @@
 * {
     box-sizing: border-box;
 }
+
+/* 共通部品 */
 body {
     font-size: 100%;
     font-family: sans-serif;
@@ -14,10 +16,10 @@ body ul li {
     margin: 0px;  /* デフォルトの行頭記号余白を無効化 */
 }
 body ul li:hover {
-    color: #0bd;
+    color: #0bd;  /* 要件 */
 }
 a[href]{
-text-decoration: none;
+text-decoration: none;  /* リンクのデコレーションを無効化 */
 }
 
 /* body コンテナ化 共通 */
@@ -29,13 +31,18 @@ align-items: center;
 }
 
 /* header共通 */
-header .logo img {
-    width: 80%;
-    height: 80%;
+header {  /* 横枠を100％まで広がって自動で余白を取る */
+    width: 100%;
+    margin: 0 auto;
 }
-header h2 {
-    text-align: center;
-    font-family: 'Philosopher', sans-serif;
+header .logo {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+}
+header .logo img {  /* logoのイメージサイズは'div class=logo'に依存 */
+    width: 100%;
+    height: 100%;
 }
 header nav ul {
     display: flex;
@@ -43,6 +50,10 @@ header nav ul {
 }
 header nav ul li {
     margin: 10px;
+}
+header h2 {  /* indexは該当タグ無し */
+    text-align: center;
+    font-family: 'Philosopher', sans-serif;
 }
 
 /* index表示のフルスクリーン背景 */
