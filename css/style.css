@@ -68,19 +68,10 @@ header h2 {  /* indexは該当タグ無し */
     font-family: 'Philosopher', sans-serif;
 }
 
-/* index表示のフルスクリーン背景 */
+/* 背景画像の指定 */
 .indexFullscreen {
     background-image: url(../src/image/main-bg.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    /* #TODO: 透過処理を入れる */
-    background-color: rgba(255,255,255,0.4);  /* 背景色を白に指定して透過度を0.8 */
-    background-blend-mode: lighten;  /* 透過指定とオプション */
 }
-
-/* header画像表示の指定 */
 .newsHeaderBox {
     background-image: url(../src/image/news-bg.jpg);
 }
@@ -91,14 +82,14 @@ header h2 {  /* indexは該当タグ無し */
     background-image: url(../src/image/contact-bg.jpg);
 }
 
-/* header画像表示の設定 */
-.newsHeaderBox, .menuHeaderBox, .contactHeaderBox {  /* 背景共通設定 */
+/* 背景画像に関する設定 */
+.newsHeaderBox, .menuHeaderBox, .contactHeaderBox, .indexFullscreen {  /* 背景共通設定 */
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-.menuHeaderBox,.contactHeaderBox {
+.menuHeaderBox, .contactHeaderBox, .indexFullscreen {
     background-color: rgba(255,255,255,0.4);  /* 背景色を白に指定して透過度を0.8 */
     background-blend-mode: lighten;  /* 透過指定とオプション */
 }
