@@ -102,6 +102,7 @@ footer p {
 }
 
 /* 背景画像に関する設定 */
+/* #ISSUE:index以外は画像の配置を固定したい（追従させたくない） */
 .newsHeaderBox, .menuHeaderBox, .contactHeaderBox, .indexFullscreen {  /* 背景共通設定 */
     background-position: center center;
     background-repeat: no-repeat;
