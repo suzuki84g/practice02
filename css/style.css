@@ -157,12 +157,12 @@ main.newsContainer {
     display: flex;
     flex-direction: column;
 }
-.newsContainer .articleHeader {
-    background-color: violet;  /* #ISSUE: テスト用 */
+.newsContainer .articleHeader {  /* #ISSUE:装飾を行う。 */
+    background-color: violet;  /* #ISSUE:テスト用 */
     display: flex;
 }
 .newsContainer .articleHeader time.updateTime {
-    border: dimgray solid 2px;  /* #ISSUE: テスト用 */
+    border: dimgray solid 2px;  /* #ISSUE:テスト用 */
     padding: 5px;
     width: 20%;
     height: auto;
