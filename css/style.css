@@ -51,6 +51,14 @@ h3 {
     border-bottom: #00a1e9 solid 2px;
     padding: 10px 5px;
 }
+.indexBox button,
+form input[type=submit] {
+    padding: 10px 30px;
+    border: solid 0px;
+    border-radius: 5px;
+    background-color: #00bfff;
+    color: #ffffff;
+}
 
 /* header共通 */
 header .logo {  /* logoのボックスサイズ */
@@ -137,11 +145,6 @@ footer p {
 }
 .indexBox button {
     margin: 30px;
-    padding: 10px 30px;
-    border: solid 0px;
-    border-radius: 5px;
-    background-color: #00bfff;
-    color: #ffffff;
 }
 
 /* news */
@@ -246,7 +249,26 @@ main.menuContainer figure.gridBox figcaption {
     font-size: small;
 }
 
-/* contact main */
+/* contact */
+header .contactTop {
+    margin: 40px 10px;
+}
+header .contactTop h2 {
+    text-align: left;
+}
+header .contactTop .mailForm {
+    margin: 10px 0;
+}
+header .contactTop form dl>*{
+    margin-bottom: 10px;
+}
+header .contactTop form input[type=text],
+header .contactTop form textarea {
+    border: #ffffff solid 1px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.7);
+}
+
 .contactContainer {
     background-color: blue;
     padding: 20px;
