@@ -272,9 +272,14 @@ header .contactTop form textarea {
 main.contactContainer {
     padding: 10px;
 }
-.contactContainer ,
-.contactContainer .mapBox,
+.contactContainer section.mapBox h3 {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.contactContainer section.mapBox .storeInformation {
+    padding: 10px;
+}
 .contactContainer .mediaBox {
     display: flex;
     flex-direction: column;
+    background-color: #FBF7F1;
 }
