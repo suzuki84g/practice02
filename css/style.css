@@ -162,21 +162,28 @@ main.newsContainer {
     display: flex;
 }
 .newsContainer .articleHeader .timeBackground {
-    border: red solid 2px;  /* #ISSUE:テスト用 */
     width: 80px;
     height: 80px;
     background-color: #11cae2e3;
     border-radius: 50%;  /* 円 */
     display: flex;
-    justify-content: center;
+    justify-content: center;  /* 左右の中央寄せ */
 }
 .newsContainer .articleHeader time.updateTime {  /* 中心から絶対位置で指定する */
-    border: orange solid 2px;
     display: flex;
     flex-direction: column;
     color: #ffffff;
+    text-align: center;
+    justify-content: center;  /* 縦に長いBox内のspan2つを中央配置指定 */
 }
-.newsContainer .articleHeader time.updateTime span {}
+.newsContainer .articleHeader time.updateTime span.MMDD {
+    font-size: 100%;
+    border-bottom: #ffffff solid 1px;
+    padding-bottom: 3px;
+}
+.newsContainer .articleHeader time.updateTime span.yyyy {
+    font-size: 90%;
+}
 .newsContainer .articleHeader div.contentTitle {
     border: teal solid 2px;
     padding: 5px;
