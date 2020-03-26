@@ -266,12 +266,11 @@ header .contactTop form input[type=text],
 header .contactTop form textarea {
     border: #ffffff solid 1px;
     border-radius: 5px;
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,0.5);
+    width: 100%;
 }
-
 main.contactContainer {
     padding: 10px;
-    background-color: gray;
 }
 .contactContainer ,
 .contactContainer .mapBox,
