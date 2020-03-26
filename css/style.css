@@ -158,18 +158,18 @@ main.newsContainer {
     flex-direction: column;
 }
 .newsContainer .articleHeader {
-    border: blue solid 2px;  /* #ISSUE:テスト用 */
     display: flex;
 }
-.newsContainer .articleHeader .timeBackground {
-    width: 80px;
-    height: 80px;
+.newsContainer .articleHeader div.timeBackground {
+    width: 70px;
+    height: 70px;
     background-color: #11cae2e3;
     border-radius: 50%;  /* 円 */
     display: flex;
     justify-content: center;  /* 左右の中央寄せ */
+    padding: 5px
 }
-.newsContainer .articleHeader time.updateTime {  /* 中心から絶対位置で指定する */
+.newsContainer .articleHeader time.updateTime {
     display: flex;
     flex-direction: column;
     color: #ffffff;
@@ -185,13 +185,17 @@ main.newsContainer {
     font-size: 90%;
 }
 .newsContainer .articleHeader div.contentTitle {
-    border: teal solid 2px;
-    padding: 5px;
+    padding: 5px 10px;
     flex: 1;
 }
-.newsContainer .articleHeader .contentTitle h3 {
+.newsContainer .articleHeader div.contentTitle h3 {
+    padding: 5px 0;
     border: none;
     font-family: 'Sawarabi Mincho', sans-serif;
+}
+.newsContainer .articleHeader div.contentTitle p .category {
+    padding: 5px 0;
+    font-size: small;
 }
 .newsContainer .articleContents {
     margin: 10px 0;
