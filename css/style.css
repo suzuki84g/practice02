@@ -272,8 +272,6 @@ header .contactTop form textarea {
 }
 main.contactContainer .mapBox {
     padding: 10px;
-}
-.contactContainer section {
     margin-bottom: 30px;
 }
 .contactContainer section h3 {
@@ -286,8 +284,13 @@ main.contactContainer .mediaBox {
     display: flex;
     flex-direction: column;
     background-color: #FBF7F1;
-    padding: 10px;
+    padding: 10px 10px 50px;
 }
-.contactContainer section.mediaBox h3+* {
+main.contactContainer .mediaBox>div>div[class*=Box] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactContainer section.mediaBox div.frameBox {
     margin: 10px 0;
 }
