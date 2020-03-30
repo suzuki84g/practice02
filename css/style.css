@@ -5,7 +5,7 @@
 }
 
 /* bodyコンテナ化 共通 */
-body .container {  /* container導入 */
+body div.container {  /* container導入 */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -52,14 +52,6 @@ h3 {
     border-bottom: #00a1e9 solid 2px;
     padding: 10px 5px;
 }
-.indexBox button,
-form input[type=submit] {
-    padding: 10px 30px;
-    border: solid 0px;
-    border-radius: 5px;
-    background-color: #00bfff;
-    color: #ffffff;
-}
 
 /* header共通 */
 header .logo {  /* logoのボックスサイズ */
@@ -98,17 +90,27 @@ footer p {
     margin-top: 30px;
 }
 
+/* buttonデザイン */
+main.indexBox button,
+header.contactHeaderBox form input[type=submit] {
+    padding: 10px 30px;
+    border: solid 0px;
+    border-radius: 5px;
+    background-color: #00bfff;
+    color: #ffffff;
+}
+
 /* 背景画像の指定 */
-.indexFullscreen {
+body.indexFullscreen {
     background-image: url(../src/image/main-bg.jpg);
 }
-.newsHeaderBox {
+header.newsHeaderBox {
     background-image: url(../src/image/news-bg.jpg);
 }
-.menuHeaderBox {
+header.menuHeaderBox {
     background-image: url(../src/image/menu-bg.jpg);
 }
-.contactHeaderBox {
+header.contactHeaderBox {
     background-image: url(../src/image/contact-bg.jpg);
 }
 
@@ -129,7 +131,7 @@ footer p {
 }
 
 /* index */
-.indexBox {
+main.indexBox {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -152,7 +154,7 @@ footer p {
 }
 
 /* news */
-header .newsTop {
+header.newsHeaderBox .newsTop {
     margin: 30px 0 50px;
 }
 main.newsContainer {
@@ -164,7 +166,7 @@ main.newsContainer {
     display: flex;
     flex-direction: column;
 }
-.newsContainer .articleHeader {
+.newsContainer .articleBox header.articleHeader {
     display: flex;
 }
 .newsContainer .articleHeader div.timeBackground {
@@ -204,7 +206,7 @@ main.newsContainer {
     padding: 5px 0;
     font-size: small;
 }
-.newsContainer .articleContents {
+.newsContainer section.articleContents {
     margin: 10px 0;
 }
 .newsContainer .articleContents img {
@@ -231,69 +233,69 @@ main.newsContainer {
     padding: 10px;
 }
 
-/* menu main */
-header .menuTop {
+/* menu */
+header.menuHeaderBox .menuTop {
     margin: 60px 0 240px;
 }
-header .menuTop p {
+.menuHeaderBox .menuTop p {
     margin: 20px 15px 0;
 }
 main.menuContainer {
     padding: 10px;
     display: grid;
 }
-main.menuContainer figure.gridBox {
+.menuContainer figure.gridBox {
     margin-bottom: 20px;
 }
-main.menuContainer figure.gridBox img {
+.menuContainer .gridBox img {
     width: 100%;
     height: 100%;
 }
-main.menuContainer figure.gridBox figcaption {
+.menuContainer .gridBox figcaption {
     font-size: small;
 }
 
 /* contact */
-header .contactTop {
+header.contactHeaderBox div.contactTop {
     margin: 40px 10px;
 }
-header .contactTop h2 {
+.contactHeaderBox .contactTop h2 {
     text-align: left;
 }
-header .contactTop .mailForm {
+.contactHeaderBox .contactTop section.mailForm {
     margin: 10px 0;
 }
-header .contactTop form dl>*{
+.contactHeaderBox .contactTop form dl>*{
     margin-bottom: 10px;
 }
-header .contactTop form input[type=text],
-header .contactTop form textarea {
+.contactHeaderBox .contactTop form input[type=text],
+.contactHeaderBox .contactTop form textarea {
     border: #ffffff solid 1px;
     border-radius: 5px;
     background-color: rgba(255,255,255,0.5);
     width: 100%;
 }
-main.contactContainer .mapBox {
+main.contactContainer section.mapBox {
     padding: 10px;
     margin-bottom: 30px;
 }
 .contactContainer section h3 {
     font-family: 'Noto Sans JP', sans-serif;
 }
-main.contactContainer .mapBox aside .storeInformation {
+.contactContainer .mapBox aside div.storeInformation {
     padding: 10px;
 }
-main.contactContainer .mediaBox {
+.contactContainer section.mediaBox {
     display: flex;
     flex-direction: column;
     background-color: #FBF7F1;
     padding: 10px 10px 50px;
 }
-main.contactContainer .mediaBox>div>div[class*=Box] {
+.contactContainer .mediaBox div.frameBox {
+    margin: 10px 0;
+}
+.contactContainer .mediaBox>div>div[class*=Box] {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.contactContainer section.mediaBox div.frameBox {
-    margin: 10px 0;
 }
