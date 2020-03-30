@@ -113,16 +113,19 @@ footer p {
 }
 
 /* 背景画像に関する設定 */
-/* #ISSUE:index以外は画像の配置を固定したい（追従させたくない） */
 .newsHeaderBox, .menuHeaderBox, .contactHeaderBox, .indexFullscreen {  /* 背景共通設定 */
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-position: center center;  /* 横中央縦中央 */
+    background-repeat: no-repeat;  /* リピートしない */
+    background-size: cover;  /* 縦横比を維持したまま画面領域を覆う */
 }
-.menuHeaderBox, .contactHeaderBox, .indexFullscreen {
-    background-color: rgba(255,255,255,0.4);  /* 背景色を白に指定して透過度を0.8 */
+.indexFullscreen, .menuHeaderBox, .contactHeaderBox {
     background-blend-mode: lighten;  /* 透過指定とオプション */
+}
+.indexFullscreen {
+    background-color: rgba(255,255,255,0.1);  /* 背景色を白に指定して透過度を0.8 */
+}
+.menuHeaderBox, .contactHeaderBox {
+    background-color: rgba(255,255,255,0.4);  /* 背景色を白に指定して透過度を設定 */
 }
 
 /* index */
