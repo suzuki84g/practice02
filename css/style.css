@@ -54,14 +54,14 @@ h3 {
 }
 
 /* header共通 */
-@media screen and (min-width:320px) {
-div.container header[class*=HeaderBox] {
+@media screen and (min-width:320px) {  /* モバイルファースト */
+div.container header[class*=HeaderBox] div.generalNavigation {
     display: flex;
     flex-direction: column;
 }
 }
-@media screen and (min-width:768px) {
-div.container header[class*=HeaderBox] {
+@media screen and (min-width:768px) {  /* タブレット以上 */
+div.container header[class*=HeaderBox] div.generalNavigation {
     display: flex;
     flex-direction: row;
 }
