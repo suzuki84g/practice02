@@ -240,7 +240,7 @@ header.newsHeaderBox .newsTop {
 }
 @media screen and (min-width:768px) {
     .newsContainer article.articleBox {
-        width: 60%;
+        width: 70%;
     }
 }
 .newsContainer .articleBox header.articleHeader {
@@ -301,7 +301,7 @@ header.newsHeaderBox .newsTop {
 }
 @media screen and (min-width:768px) {
     .newsContainer aside.sidebarBox {
-        width: 35%;
+        width: 25%;
     }
 }
 .newsContainer .sidebarBox section {
@@ -362,22 +362,45 @@ header.contactHeaderBox div.contactTop {
 .contactHeaderBox .contactTop h2 {
     text-align: left;
 }
-.contactHeaderBox .contactTop section.mailForm {
-    margin: 10px 0;
+@media screen and (min-width:320px) {
+    .contactHeaderBox .contactTop section.mailForm {
+        margin: 10px 0;
+    }
+    .contactHeaderBox .contactTop form dl>*{
+        margin-bottom: 10px;
+    }
+    .contactHeaderBox .contactTop form input[type=text],
+    .contactHeaderBox .contactTop form textarea {
+        border: #ffffff solid 1px;
+        border-radius: 5px;
+        background-color: rgba(255,255,255,0.5);
+        width: 100%;
+    }
 }
-.contactHeaderBox .contactTop form dl>*{
-    margin-bottom: 10px;
-}
-.contactHeaderBox .contactTop form input[type=text],
-.contactHeaderBox .contactTop form textarea {
-    border: #ffffff solid 1px;
-    border-radius: 5px;
-    background-color: rgba(255,255,255,0.5);
-    width: 100%;
+@media screen and (min-width:768px) {
+    .contactHeaderBox .contactTop form input[type=text] {
+        width: 25%;
+    }
+    .contactHeaderBox .contactTop form textarea {
+        width: 50%;
+    }
 }
 main.contactContainer section.mapBox {
     padding: 10px;
     margin-bottom: 30px;
+}
+@media screen and (min-width:768px) {
+    main.contactContainer section.mapBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    aside {
+        width: 25%;
+    }
+    div.googleMap {
+        width: 70%;
+    }
 }
 .contactContainer section h3 {
     font-family: 'Noto Sans JP', sans-serif;
