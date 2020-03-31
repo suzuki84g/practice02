@@ -12,36 +12,36 @@ body div.container {  /* container導入 */
     align-items: center;
 }
 @media screen and (min-width:320px) {
-header {  /* 横枠を100％まで広がって自動で余白を取る */
-    width: 100%;
-    margin: 0 auto;
-}
-main {
-    width: 100%;
-    margin: 0 auto;
-}
-footer {
-    width: 100%;
-    margin: 0 auto;
-}
+    header {  /* 横枠を100％まで広がって自動で余白を取る */
+        width: 100%;
+        margin: 0 auto;
+    }
+    main {
+        width: 100%;
+        margin: 0 auto;
+    }
+    footer {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 @media screen and (min-width:768px) {
-header>div {  /* タブレット以上は80%まで */
-    width: 80%;
-    margin: 0 auto;
-}
-header>div>div.sentence {
-    width: 60%;
-    margin: 0 auto;
-}
-main {
-    width: 80%;
-    margin: 0 auto;
-}
-footer {
-    width: 100%;
-    margin: 0 auto;
-}
+    header>div {  /* タブレット以上は80%まで */
+        width: 80%;
+        margin: 0 auto;
+    }
+    header>div>div.sentence {
+        width: 60%;
+        margin: 0 auto;
+    }
+    main {
+        width: 80%;
+        margin: 0 auto;
+    }
+    footer {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 /* 全体共通部品 */
@@ -79,36 +79,36 @@ div.container header[class*=HeaderBox] {
     flex-direction: column;
 }
 @media screen and (min-width:320px) {  /* モバイルファースト */
-div.container header[class*=HeaderBox] div.generalNavigation {
-    display: flex;
-    flex-direction: column;
-}
-header[class*=HeaderBox] .logo {  /* logoのボックスサイズ */
-    width: 200px;
-    height: auto;
-    margin: 0 auto;
-}
+    div.container header[class*=HeaderBox] div.generalNavigation {
+        display: flex;
+        flex-direction: column;
+    }
+    header[class*=HeaderBox] .logo {  /* logoのボックスサイズ */
+        width: 200px;
+        height: auto;
+        margin: 0 auto;
+    }
 }
 @media screen and (min-width:768px) {  /* タブレット以上 */
-div.container header[class*=HeaderBox] div.generalNavigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.generalNavigation div.logo {
-    align-self: flex-start;
-}
-.generalNavigation nav {
-    align-self: flex-end;
-}
-header[class*=HeaderBox] .logo {  /* logoのボックスサイズ */
-    width: 200px;
-    height: auto;
-    margin: 0 auto 0 0;
-}
-header div[class*=Top] {
-    align-self: center;
-}
+    div.container header[class*=HeaderBox] div.generalNavigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .generalNavigation div.logo {
+        align-self: flex-start;
+    }
+    .generalNavigation nav {
+        align-self: flex-end;
+    }
+    header[class*=HeaderBox] .logo {  /* logoのボックスサイズ */
+        width: 200px;
+        height: auto;
+        margin: 0 auto 0 0;
+    }
+    header div[class*=Top] {
+        align-self: center;
+    }
 }
 header[class*=HeaderBox] .logo img {  /* logoのイメージサイズは'div class=logo'に依存 */
     width: 100%;
@@ -188,28 +188,28 @@ header.contactHeaderBox {
     width: 90%;
 }
 @media screen and (min-width:320px) {
-main.indexBox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px 0px;
-}
-.indexBox p {
-    text-align: left;
-    width: 90%;
-}
+    main.indexBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0px;
+    }
+    .indexBox p {
+        text-align: left;
+        width: 90%;
+    }
 }
 @media screen and (min-width:768px) {
-main.indexBox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 200px 0px;
-}
-.indexBox p {
-    text-align: center;
-    width: 90%;
-}
+    main.indexBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 200px 0px;
+    }
+    .indexBox p {
+        text-align: center;
+        width: 90%;
+    }
 }
 .indexBox button {
     margin: 30px;
@@ -220,28 +220,28 @@ header.newsHeaderBox .newsTop {
     margin: 30px 0 50px;
 }
 @media screen and (min-width:320px) {
-main.newsContainer {
-    padding: 40px 10px;
-    display: flex;
-    flex-direction: column;
-}
+    main.newsContainer {
+        padding: 40px 10px;
+        display: flex;
+        flex-direction: column;
+    }
 }
 @media screen and (min-width:768px) {
-main.newsContainer {
-    padding: 40px 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+    main.newsContainer {
+        padding: 40px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 .newsContainer article.articleBox {
     display: flex;
     flex-direction: column;
 }
 @media screen and (min-width:768px) {
-.newsContainer article.articleBox {
-    width: 60%;
-}
+    .newsContainer article.articleBox {
+        width: 60%;
+    }
 }
 .newsContainer .articleBox header.articleHeader {
     display: flex;
@@ -300,9 +300,9 @@ main.newsContainer {
     flex-direction: column;
 }
 @media screen and (min-width:768px) {
-.newsContainer aside.sidebarBox {
-    width: 35%;
-}
+    .newsContainer aside.sidebarBox {
+        width: 35%;
+    }
 }
 .newsContainer .sidebarBox section {
     margin: 15px 0;
@@ -323,17 +323,17 @@ header.menuHeaderBox .menuTop {
     margin: 20px 15px 0;
 }
 @media screen and (min-width:320px) {
-main.menuContainer {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-}
+    main.menuContainer {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
 }
 @media screen and (min-width:768px) {
-main.menuContainer {
-    padding: 10px;
-    display: grid;
-}
+    main.menuContainer {
+        padding: 10px;
+        display: grid;
+    }
 }
 .menuContainer figure.gridBox {
     margin-bottom: 20px;
