@@ -414,6 +414,12 @@ main.contactContainer section.mapBox {
     background-color: #FBF7F1;
     padding: 10px 10px 50px;
 }
+@media screen and (min-width:1200px) {
+    .contactContainer section.mediaBox {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
 .contactContainer .mediaBox div.frameBox {
     margin: 10px 0;
 }
