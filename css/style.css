@@ -44,7 +44,6 @@ footer {
 }
 }
 
-
 /* 全体共通部品 */
 body {
     font-size: 100%;
@@ -323,9 +322,18 @@ header.menuHeaderBox .menuTop {
 .menuHeaderBox .menuTop p {
     margin: 20px 15px 0;
 }
+@media screen and (min-width:320px) {
+main.menuContainer {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+}
+@media screen and (min-width:768px) {
 main.menuContainer {
     padding: 10px;
     display: grid;
+}
 }
 .menuContainer figure.gridBox {
     margin-bottom: 20px;
