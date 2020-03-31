@@ -30,6 +30,10 @@ header>div {  /* タブレット以上は80%まで */
     width: 80%;
     margin: 0 auto;
 }
+header>div>div.sentence {
+    width: 60%;
+    margin: 0 auto;
+}
 main {
     width: 80%;
     margin: 0 auto;
